@@ -1,0 +1,42 @@
+/* table {
+  width: 100%;
+  border: 1px solid black;
+} */
+
+/* th,
+tr,
+thead,
+td {
+  text-align: center;
+  border: 1px solid black;
+} */
+
+body {
+  margin-bottom: 50px;
+}
+
+.image {
+  background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80');
+}
+
+.background-image {
+  background-image: url('https://images.unsplash.com/photo-1528238646472-f2366160b6c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80');
+}
+
+.margin-section {
+  margin-top: 25px;
+}
+
+.redText {
+  color: red;
+}
+
+.shelf-group {
+  width: 46%;
+  display: inline-block;
+  margin: 10px;
+}
+
+.padding {
+  margin-bottom: 10px;
+}

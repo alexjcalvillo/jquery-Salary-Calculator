@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="jquery.js"></script>
+    <script src="app.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body class="background-image">
+    <div class="jumbotron">
+      <h1 class="display-2">Employee Salary Tracking Application</h2>
+    </div>
+    <div class="container body">
+      <form class="js-form margin-section">
+            <div class="form-group">
+                <label for="js-firstName">First Name</label>
+                <input id="js-firstName" class="form-control" type="text" placeholder="employee first name"
+                />
+            </div>
+            <div class="form-group">
+                <label for="js-lastName">Last Name</label>
+                <input id="js-lastName" class="form-control" type="text" placeholder="employee last name"
+                />
+            </div>
+            <div class="form-group">
+              <label for="js-idNumber">ID Number</label>
+              <input id="js-idNumber" class="form-control" type="text" placeholder="ID number" />
+            </div>
+            <div class="form-group shelf-group">
+              <label for="js-jobTitle">Job Title</label>
+              <input id="js-jobTitle" class="form-control" type="text" placeholder="job title" />
+            </div>
+          <div class="form-group shelf-group">
+            <label for="js-annualSalary">Annual Salary</label>
+            <input id="js-annualSalary" class="form-control" type="number" placeholder="annual salary" />
+          </div>
+          <button class="js-btn-submit btn btn-md btn-primary btn-block padding" type="submit">Submit</button>
+      </form>
+
+    
+
+    <hr>
+<div class="container bg-light">
+    <div class="container-fluid table-responsive">
+      <h2>Employees</h2>
+      <table class="margin-section table table-striped table-sm">
+        <thead>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>ID Number</th>
+          <th>Job Title</th>
+          <th>Annual Salary</th>
+          <th></th>
+        </thead>
+        <tbody id="js-table-body"></tbody>
+      </table>    
+      <h2 class="js-monthlyCost">Monthly Cost: $0.00</h2>
+    </div>
+  </div>
+</div>
+  </div>
+  </body>
+</html>
