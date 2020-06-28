@@ -13,10 +13,13 @@
     <title>Document</title>
   </head>
   <body class="background-image">
-    <div class="jumbotron">
-      <h1 class="display-2">Employee Salary Tracking Application</h2>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <p class="navbar-brand text-color-white col-md-3 col-lg-2 mr-0 px-5">Employee Salary Tracking Application</p>
+    </nav>
     </div>
     <div class="container body">
+      <div class="container">
+        <h1>Add an Employee</h1>
       <form class="js-form margin-section">
             <div class="form-group">
                 <label for="js-firstName">First Name</label>
@@ -31,21 +34,25 @@
             <div class="form-group">
               <label for="js-idNumber">ID Number</label>
               <input id="js-idNumber" class="form-control" type="text" placeholder="ID number" />
+              <small id="idReq" class="form-text text-muted">A unique ID number is required to avoid inconsistencies.</small>
             </div>
-            <div class="form-group shelf-group">
-              <label for="js-jobTitle">Job Title</label>
-              <input id="js-jobTitle" class="form-control" type="text" placeholder="job title" />
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group shelf-group">
+                <label for="js-jobTitle">Job Title</label>
+                <input id="js-jobTitle" class="form-control" type="text" placeholder="job title" />
+              </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group shelf-group">
+                <label for="js-annualSalary">Annual Salary</label>
+                <input id="js-annualSalary" class="form-control" type="text" placeholder="annual salary" />
+                </div>
+              </div>
             </div>
-          <div class="form-group shelf-group">
-            <label for="js-annualSalary">Annual Salary</label>
-            <input id="js-annualSalary" class="form-control" type="number" placeholder="annual salary" />
-          </div>
           <button class="js-btn-submit btn btn-md btn-primary btn-block padding" type="submit">Submit</button>
       </form>
-
-    
-
-    <hr>
+    </div>
 <div class="container bg-light">
     <div class="container-fluid table-responsive">
       <h2>Employees</h2>
@@ -59,7 +66,7 @@
           <th></th>
         </thead>
         <tbody id="js-table-body"></tbody>
-      </table>    
+      </table>
       <h2 class="js-monthlyCost">Monthly Cost: $0.00</h2>
     </div>
   </div>

@@ -18,9 +18,11 @@ function submitData(event) {
     annualSalary: $('#js-annualSalary').val(),
   };
 
+  if (employee.annualSalary == '') {
+    alert("Please enter the employee's annual salary.");
+  }
   employee.annualSalary = parseFloat(employee.annualSalary);
-
-  if (employee.idNumber == '' || employee.annualSalary == '') {
+  if (employee.idNumber == '') {
     alert('Please enter an employee ID Number.');
   } else {
     employeeList.push(employee);

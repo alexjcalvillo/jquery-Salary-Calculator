@@ -15,8 +15,12 @@ body {
   margin-bottom: 50px;
 }
 
-.image {
-  background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80');
+.navbar {
+  background-color: #1b65a6;
+}
+
+.text-color-white {
+  color: white;
 }
 
 .background-image {
@@ -31,12 +35,16 @@ body {
   color: red;
 }
 
-.shelf-group {
+/* .shelf-group {
   width: 46%;
   display: inline-block;
   margin: 10px;
-}
+} */
 
 .padding {
   margin-bottom: 10px;
+}
+
+.container {
+  background-color: #f2f2f2;
 }
