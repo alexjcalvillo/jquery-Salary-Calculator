@@ -15,8 +15,16 @@ body {
   margin-bottom: 50px;
 }
 
+th {
+  font-size: 18px;
+}
+
+.text {
+  color: black;
+}
+
 .navbar {
-  background-color: #1b65a6;
+  background-color: lightslategray;
 }
 
 .text-color-white {
@@ -47,4 +55,20 @@ body {
 
 .container {
   background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.table-distinct {
+  background-color: lightslategray;
+  color: white;
+}
+
+.output-display {
+  margin-top: 15px;
+}
+
+.border-table {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
 }
