@@ -62,13 +62,13 @@ function render() {
   for (let employeeIndex in employeeList) {
     let employee = employeeList[employeeIndex];
     $('#js-table-body').append(`
-    <tr data-id="${employee.idNumber}">
+    <tr >
         <td>${employee.firstName}</td>
         <td>${employee.lastName}</td>
-        <td class="idNumber">${employee.idNumber}</td>
+        <td>${employee.idNumber}</td>
         <td>${employee.jobTitle}</td>
         <td>$${employee.annualSalary}</td>
-        <td><button class="js-btn-delete">Delete</button></td>
+        <td><button data-id="${employee}" class="js-btn-delete">Delete</button></td>
     </tr>
     `);
     monthlyCost += parseInt((employee.annualSalary / 12).toFixed(2));
