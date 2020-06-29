@@ -39,15 +39,16 @@ function submitData(event) {
 }
 
 function deleteEmployee() {
-  let val = parseInt($(this).parent().parent().find('.idNumber').text());
+  // let val = parseInt($(this).parent().parent().find('.idNumber').text());
 
-  let index = employeeList.findIndex(function (employeeList) {
-    return employeeList.idNumber == val;
-  });
-  console.log('ID Number Removed', val);
-  console.log('Index of array', index);
+  // let index = employeeList.findIndex(function (employeeList) {
+  //   return employeeList.idNumber == val;
+  // });
+  // console.log('ID Number Removed', val);
+  // console.log('Index of array', index);
+  const index = $(this).data('id');
+
   employeeList.splice(index, 1);
-  $(this).parent().parent().remove();
 
   render();
 }
@@ -58,9 +59,10 @@ function render() {
   let monthlyCost = 0;
   const costCap = 20000;
 
-  for (let employee of employeeList) {
+  for (let employeeIndex in employeeList) {
+    let employee = employeeList[employeeIndex];
     $('#js-table-body').append(`
-    <tr data="${employee.idNumber}">
+    <tr data-id="${employee.idNumber}">
         <td>${employee.firstName}</td>
         <td>${employee.lastName}</td>
         <td class="idNumber">${employee.idNumber}</td>
